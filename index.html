@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jago Silver</title>
+  <style>
+    :root {
+      --cream: #f5f0e8;
+      --dark: #1a1a1a;
+      --mid: #3a3530;
+      --accent: #6b4c2a;
+      --accent-light: #9b7a52;
+      --border: #c8b89a;
+      --nav-bg: #2c2420;
+      --nav-text: #e8dcc8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 17px; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.75;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--nav-bg);
+      color: var(--nav-text);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      border-bottom: 4px solid var(--accent);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.6rem;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+    }
+
+    /* ── Main ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+      flex: 1;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      color: var(--mid);
+      margin-bottom: 3.5rem;
+      max-width: 580px;
+    }
+
+    /* ── Project grid ── */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .project {
+      background: #fff;
+      padding: 2rem 2.5rem;
+      text-decoration: none;
+      color: var(--dark);
+      display: block;
+      transition: background 0.15s;
+    }
+
+    .project:hover {
+      background: #fffbf4;
+    }
+
+    .project-label {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .project h2 {
+      font-size: 1.3rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      font-size: 0.92rem;
+      color: #666;
+      line-height: 1.6;
+      max-width: 520px;
+    }
+
+    .project .arrow {
+      display: inline-block;
+      margin-top: 0.9rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--nav-bg);
+      color: rgba(232,220,200,0.4);
+      text-align: center;
+      padding: 1.5rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 560px) {
+      html { font-size: 15px; }
+      header { padding: 3.5rem 1.5rem 3rem; }
+      header h1 { font-size: 2rem; }
+      main { padding: 3rem 1.25rem 5rem; }
+      .project { padding: 1.5rem 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Jago Silver</h1>
+  <p>North Cornwall</p>
+</header>
+
+<main>
+
+  <p class="intro">Children's book illustrator. These pages collect a few of the things I've made and found along the way.</p>
+
+  <div class="projects">
+
+    <a href="https://jagosilver.github.io/christopher-silver/" class="project">
+      <p class="project-label">Archive</p>
+      <h2>Silver Family Archive</h2>
+      <p>Photographs and writings from two members of the Silver family — a geriatrician and keen photographer whose glass plates span four decades, and a memoir of a Devon childhood.</p>
+      <span class="arrow">Visit →</span>
+    </a>
+
+    <a href="https://jagosilver.github.io/cruel-and-curious/" class="project">
+      <p class="project-label">Exhibition Series</p>
+      <h2>Cruel &amp; Curious</h2>
+      <p>An annual art and illustration exhibition held at Stowe Barton — an 18th-century stone barn on National Trust land near Bude, North Cornwall. Running 2013–2023.</p>
+      <span class="arrow">Visit →</span>
+    </a>
+
+    <a href="https://jagosilver.github.io/bodmin-wadebridge-railway/" class="project">
+      <p class="project-label">Archaeology · 1998</p>
+      <h2>What Evidence Is There Remaining of the Bodmin–Wadebridge Railway?</h2>
+      <p>An A Level archaeology project investigating the physical and documentary evidence of the Bodmin and Wadebridge Railway, built in 1834 — using parish maps, Ordnance Survey maps, early 20th century photographs, and original fieldwork along what is now the Camel Trail.</p>
+      <span class="arrow">Visit →</span>
+    </a>
+
+  </div>
+
+</main>
+
+<footer>jagosilver.github.io</footer>
+
+</body>
+</html>
